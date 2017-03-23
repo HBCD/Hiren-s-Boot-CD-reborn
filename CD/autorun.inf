@@ -1,0 +1,5 @@
+[AutoRun]
+icon=HBCD\HBCDMenu.exe
+label=Hiren's BootCD
+Shell\Option1=Hiren's BootCD
+Shell\Option1\Command=HBCD\HBCDMenu.exe
