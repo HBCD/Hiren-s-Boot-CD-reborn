@@ -8,3 +8,16 @@ It is a great resource for anyone with computer problems who is having trouble a
 With some simple knowledge about what is contained on the CD, you can use it to repair many problems computer like hard drive failure, virus infections, partitioning, password recovery and data recovery.
 
 We may call it as an emergency CD which every computer technician or home user must have.
+
+
+## How to create iso
+
+### 1. Run Make ISO .. (grub4dos or isolinux)
+![No Redeeemed Items](./img/screenshot-1.png)
+
+### 2. Ready
+> MyHBCD.iso
+
+```
+Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
+```
