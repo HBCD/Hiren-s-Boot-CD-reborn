@@ -1,0 +1,203 @@
+#timeout 15
+default /default
+write (md)0x220+1 !BAT\necho -n -P:0000 $[0107] Hiren's BootCD 15.2 \0 && initscript (md)0x220+1
+
+title Boot From Hard Drive (Windows Vista/7/2008 or Xp)\n
+find --set-root --ignore-floppies --ignore-cd /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr || rootnoverify (hd0) && chainloader +1 && boot
+map () (hd0) && map (hd0) () && map --rehook
+find --set-root --devices=h /bootmgr || find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /bootmgr || chainloader /ntldr
+
+title \n
+root
+
+title Mini Windows Xp\nRun Antivirus and other windows programs
+# example password: test 
+# password --md5 $1$gNe0$KZPOE8wNbTNSKOzrajuoB0
+find --set-root /HBCD/XP/XP.BIN
+#map --mem /HBCD/XP/f6drivers.img (fd0)&&map --hook
+chainloader /HBCD/XP/XP.BIN
+
+title Dos Programs\nRun Dos Programs
+set dos=/HBCD/Dos/dos.gz
+find --set-root /HBCD/Boot/dos.img && set dos=/HBCD/Boot/dos.img
+# to make big floppy image of all the dos programs (Useful when booted from NTFS usb drive) open HBCD\DOS\dosimg.cmd
+find --set-root %dos%
+map --mem %dos% (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+map --floppies=1
+
+title Linux based rescue environment (Parted Magic 2012-10-10)\nTo manage partitions, backup and recovery
+set pm=/HBCD/Boot/pmagic.lst
+find --set-root %pm%
+set lang=us
+set opt=
+configfile %pm%
+
+title \n
+root
+
+title Windows Memory Diagnostic\n
+find --set-root /HBCD/Boot/wmemtest.gz
+kernel /HBCD/Boot/memdisk
+initrd /HBCD/Boot/wmemtest.gz
+
+title MemTest86+\n
+find --set-root /HBCD/Boot/memtest.gz
+map --mem /HBCD/Boot/memtest.gz (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+map --floppies=1
+
+title Offline NT/2000/XP/Vista/7 Password Changer\nWindows Password Reset 2011-05-11
+find --set-root /HBCD/Boot/chntpw
+set opt=vga=1
+clear
+echo Press ENTER to boot, or give linux kernel boot options first if needed.
+echo Some that I have to use once in a while:
+echo boot: nousb     - to turn off USB if not used and it causes problems
+echo boot: irqpoll   - if some drivers hang with irq problem messages
+echo boot: vga=ask   - if you have problems with the videomode
+echo boot: nodrivers - skip automatic disk driver loading
+echo
+set /p opt=boot: 
+kernel /HBCD/Boot/chntpw %opt%
+initrd /HBCD/Boot/chntpw.gz
+
+title Kon-Boot\nWindows (any/blank password) and Linux (kon-usr) Login Without a Password
+set kon=konboot.gz
+find --set-root /HBCD/Boot/konboot.gz | set iscd=
+find --set-root /HBCD/Boot/konbootp.gz && set kon=konbootp.gz
+map --mem /HBCD/Boot/%kon% (fd0)
+map --hook
+chainloader (fd0)+1
+if not "%iscd%"=="(cd)" pause --wait=2 HDD SWAP
+if not "%iscd%"=="(cd)" map (hd1) (hd0) 
+map --hook
+rootnoverify (fd0)
+map --floppies=1
+
+title Seagate DiscWizard (Powered by Acronis Trueimage)\nPress ALT+T+O+K to skip Error
+find --set-root /HBCD/Boot/SeagatDW
+kernel /HBCD/Boot/SeagatDW vga=788 ramdisk_size=32768 acpi=off quiet noapic mbrcrcs on
+initrd /HBCD/Boot/SeagatDW.gz
+
+title PLoP Boot Manager\n
+find --set-root /HBCD/Boot/plpbt.bin
+kernel /HBCD/Boot/plpbt.bin
+
+title Smart Boot Manager 3.7.1\n
+find --set-root /HBCD/Boot/smartbm.gz
+kernel /HBCD/Boot/memdisk
+initrd /HBCD/Boot/smartbm.gz
+
+title Fix "NTLDR is Missing"\n
+find --set-root /HBCD/Boot/ntldr.gz
+kernel /HBCD/Boot/memdisk
+initrd /HBCD/Boot/ntldr.gz
+
+title Darik's Boot and Nuke (Hard Disk Eraser)\n
+find --set-root /HBCD/Boot/dban.gz
+kernel /HBCD/Boot/memdisk
+initrd /HBCD/Boot/dban.gz
+
+title Custom Menu...  (Use HBCDCustomizer to add your files)\n
+find --set-root /HBCD/menu-custom.lst
+configfile /HBCD/menu-custom.lst
+
+title More...\n
+root
+
+title Dos Programs (Alternative Boot Method)\nUsing Memdisk
+set dos=/HBCD/Dos/dos.gz
+find --set-root /HBCD/Boot/dos.img && set dos=/HBCD/Boot/dos.img
+find --set-root %dos%
+kernel /HBCD/Boot/memdisk floppy
+initrd %dos%
+
+
+title Boot HDD 1 MBR\n
+rootnoverify (hd0)
+chainloader +1
+title Boot HDD 1 Partition 1\n
+rootnoverify (hd0,0)
+chainloader +1
+title Boot HDD 1 Partition 2\n
+rootnoverify (hd0,1)
+chainloader +1
+title Boot HDD 1 Partition 3\n
+rootnoverify (hd0,2)
+chainloader +1
+title Boot HDD 1 Partition 4\n
+rootnoverify (hd0,3)
+chainloader +1
+title Boot HDD 2 MBR\n
+rootnoverify (hd1)
+chainloader +1
+title Boot HDD 2 Partition 1\n
+rootnoverify (hd1,0)
+chainloader +1
+title Boot HDD 2 Partition 2\n
+rootnoverify (hd1,1)
+chainloader +1
+title Boot HDD 2 Partition 3\n
+rootnoverify (hd1,2)
+chainloader +1
+title Boot HDD 2 Partition 4\n
+rootnoverify (hd1,3)
+chainloader +1
+title Boot HDD 3 MBR\n
+rootnoverify (hd2)
+chainloader +1
+title Boot HDD 3 Partition 1\n
+rootnoverify (hd2,0)
+chainloader +1
+title Boot HDD 3 Partition 2\n
+rootnoverify (hd2,1)
+chainloader +1
+title Boot HDD 3 Partition 3\n
+rootnoverify (hd2,2)
+chainloader +1
+title Boot HDD 3 Partition 4\n
+rootnoverify (hd2,3)
+chainloader +1
+
+title More...\n
+root
+title Boot Windows XP (NTLDR) from Hard Drive\n
+find --set-root --ignore-floppies --ignore-cd /ntldr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /ntldr
+chainloader /ntldr
+savedefault
+
+title Boot Windows Vista/7 (BOOTMGR) from Hard Drive\n
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+map () (hd0)
+map (hd0) ()
+map --rehook
+find --set-root --ignore-floppies --ignore-cd /bootmgr
+chainloader /bootmgr
+savedefault
+
+title Chainload isolinux.bin\n
+find --set-root /HBCD/isolinux.bin
+chainloader /HBCD/isolinux.bin
+
+title Reboot
+reboot
+
+title Shutdown
+halt
+
+title Custom Menu...  (Use HBCDCustomizer to add your files)\n
+find --set-root /HBCD/menu-custom.lst
+configfile /HBCD/menu-custom.lst
+
+title ...Back\n
+root
