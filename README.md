@@ -21,3 +21,14 @@ We may call it as an emergency CD which every computer technician or home user m
 ```
 Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
 ```
+
+### Tools
+* 3DPChip
+* 7-Zip
+* AcronisDiskDirector
+* AllUsersTempCleaner
+* AlternateStreamView
+* AngryIPScanner
+* ATFCleaner
+* AtlantisWord
+* HBCDCustomizer
