@@ -1,0 +1,137 @@
+title Start (Options: Language %lang% %opt%)\n
+clear
+find --set-root /HBCD/Boot/pmagic/bzImage
+kernel /HBCD/Boot/pmagic/bzImage edd=off load_ramdisk=1 prompt_ramdisk=0 rw vga=normal loglevel=9 max_loop=256 vmalloc=288MiB directory=/HBCD/Boot keymap=%lang% %opt%
+initrd /HBCD/Boot/pmagic/initrd.img
+
+title \n
+root
+
+title Live with default settings\nLive mode intended for 175-312MB based systems. The Live medium must remain in the drive (CD) or attached (USB) to the system during this session.
+set opt=livemedia noeject
+configfile %pm%
+
+title Live with low RAM settings\nDisables most daemons and other RAM-exhausting processes. GParted and TWM are the only programs started by default. The preferred Live option for systems     with less than 175MB of RAM.
+set opt=xvesa lowram livemedia noeject nogpm nolvm nonfs nofstabdaemon nosmart noacpid nodmeventd nohal nosshd nosound nobluetooth nowicd nontpd 
+configfile %pm%
+
+title Alternate graphical server\nXvesa is used by default instead of Xorg. (Try this option if Xorg fails.)
+set opt=xvesa
+configfile %pm%
+
+title Failsafe Settings\nvga=normal, acpi=off, nolapic, nopcmcia, noscsi, nogpm, nosmart, no_iscsi,     boots to console.
+set opt=nolapic nopcmcia noscsi nogpm consoleboot nosmart nosshd nosound no_iscsi
+configfile %pm%
+
+title ACPI=NO for Toshiba Satellite\nThis option disables ACPI so machines like the Toshiba Stellite 1135 can boot  properly
+set opt=xvesa acpi=no
+configfile %pm%
+
+title Emulator compatibility\nThe noreplace-paravirt parameter (which is needed for some emulators) and xvesa
+set opt=xvesa livemedia noeject noreplace-paravirt
+configfile %pm%
+
+title Console (boots to the shell)\nNormal vga, verbose kernel messages, and no automatic graphical environment.
+set opt=consoleboot
+configfile %pm%
+
+title Initramfs (boot to initramfs shell)\nDumps to a shell inside the initramfs.
+set opt=initramfs_shell
+configfile %pm%
+
+title KILL Nouveau\nTry this if your Nvidia card fails. This removes the Nouveau kernel module and Xorg driver. Parted Magic will use the old Xorg nv driver instead.
+set opt=blacklist=nouveau
+configfile %pm%
+
+title Load NVIDIA\nLoad the NVIDIA kernel module at boot. This requires the NVIDIA packages found on partedmagic.com.
+set opt=blacklist=nouveau nvidia=yes
+configfile %pm%
+
+title Radeon no modeset\nTry this if your ATI/radeon card fails.
+set opt=blacklist=radeon
+configfile %pm%
+
+title Intel Mobile 4 workaround\nTry this if your Intel Mobile 4 is giving graphic issues.
+set opt=mobile4
+configfile %pm%
+
+title Force CPU Frequency Scaling\nDefault laptop=on, desktop=off
+set opt=cpufreq
+configfile %pm%
+
+title No CPU Frequency Scaling\nDefault laptop=on, desktop=off  To set laptop=on, desktop=on change the "nocpufreq" parameter to "cpufreq"
+(hit e to edit and b to boot).
+set opt=nocpufreq
+configfile %pm%
+
+title More...\n
+root
+title  ....Back\n
+root
+
+title Clonezilla\nAutomatically starts Clonezilla at boot without the grapical interface.\nClonzilla runs from the command line, so Xorg is a waste of resources.
+set opt=clonezilla
+configfile %pm%
+
+title Nwipe\nAutomatically starts Nwipe at boot without the grapical interface.\nNwipe runs from the command line, so Xorg is a waste of resources.
+set opt=nwipe
+configfile %pm%
+
+title Add Custom Kernel Parameters\nPrompts for the Kernel Parameters
+set /p opt=Kernel Parameters :
+configfile %pm%
+
+title Language\n
+root
+
+title  US English (Default)\nSet locales to US English
+set lang=us
+configfile %pm%
+
+title  Brazilian\nSet locales to Brazilian
+set lang=br-abnt2 pt_BR
+configfile %pm%
+
+title  Chinese\nSet locales to Chinese
+set lang=us zh_CN
+configfile %pm%
+
+title  Chinese Taiwan\nSet locales to Chinese (Taiwan)
+set lang=us zh_TW
+configfile %pm%
+
+title  French\nSet locales to French
+set lang=fr-latin1 fr_FR
+configfile %pm%
+
+title  German\nSet locales to German
+set lang=de-latin1 de_DE
+configfile %pm%
+
+title  Italian\nSet locales to Italian
+set lang=it it_IT
+configfile %pm%
+
+title  Japanese\nSet locales to Japanese
+set lang=us ja_JP
+configfile %pm%
+
+title  Norwegian\nSet locales to Norwegian
+set lang=no-latin1 nb_NO
+configfile %pm%
+
+title  Polish\nSet locales to Polish
+set lang=pl pl_PL
+configfile %pm%
+
+title  Russian\nSet locales to Russian
+set lang=ru ru_RU
+configfile %pm%
+
+
+title ...Back to main menu\n
+find --set-root /HBCD/menu.lst
+configfile /HBCD/menu.lst
+
+
+
