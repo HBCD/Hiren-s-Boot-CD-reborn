@@ -10,25 +10,8 @@ With some simple knowledge about what is contained on the CD, you can use it to 
 We may call it as an emergency CD which every computer technician or home user must have.
 
 
-## How to create iso
+## Information
 
-### 1. Run Make ISO .. (grub4dos or isolinux)
-![No Redeeemed Items](./img/screenshot-1.png)
+For more information review on  [**wiki**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/wiki)
 
-### 2. Ready
-> MyHBCD.iso
-
-```
-Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
-```
-
-### Tools
-* 3DPChip
-* 7-Zip
-* AcronisDiskDirector
-* AllUsersTempCleaner
-* AlternateStreamView
-* AngryIPScanner
-* ATFCleaner
-* AtlantisWord
-* HBCDCustomizer
+Tools added in [**Tool structure**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/projects/1)
