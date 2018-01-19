@@ -1,0 +1,215 @@
+-------------------------------
+Hiren's BootCD 15.2
+Updated on 07-11-2012
+Homepage: www.hiren.info/bootcd
+-------------------------------
++ BattStat 0.99b - Battery Status monitor and power management freeware for Windows 7/Vista/XP/2000 x86/x64.
++ BrowsingHistoryView 1.05 - To view history data of Internet Explorer, Mozilla Firefox, Google Chrome, and Safari Web browsers in one table.
++ ClearLock 1.4.0 - To lock your desktop with a transparent layer, allowing you to see what is happening on your desktop and at the same time prevent access to the computer without the proper password.
++ DRevitalize 1.2 - Repairs bad sectors (physical defects) on hard drives by generating a special sequence of high and low signals around the physically damaged area.
++ EncFS 1.7.4 - This should be used for secure online file backup services such as Google Drive, Dropbox and Sugarsync as the encryption do not occupy a fixed size containers and backup programs can copy encrypted files and can be accessed from linux, iPhone/iOS and android using BoxCryptor and Cryptonite.
++ ImDisk 1.6.0 - To create/mount virtual hard disk, floppy or CD/DVD drives using image files or system memory.
++ MBRCheck 1.2.3 - Checks the legitimacy of the Master Boot Record (MBR) code of the hard drives.
++ McAfee Removal Tool 6.0.152.0 - McAfee Consumer Product Removal Tool removes all 2005 - 2012 versions of McAfee products.
++ Minixp - Added/updated Storage/LAN/WLAN drivers and other minor improvements, iso boot works, path can be changed in HBCD\XP\X using notepad. 
++ Norton Removal Tool 20.0.0.21 - SymNRT uninstalls most Norton AntiVirus, Norton Internet Security, Norton 360, and Norton SystemWorks even when the uninstaller fails to remove them.
++ Remove Non Present Drivers - Automatically remove all non-present/disconnected devices from a Windows and can often be useful to prevent misbehaving/unnecessary drivers from being loaded, cleanup drivers when you replaced motherboard or used backup image of different hardware.
++ Tor Browser 2.2.39 - Surf the internet anonymously through encryption, even https sites can be browsed safely where it is blocked by your local ISP.
++ WifiInfoView 1.05 - Wireless networks information including Network Name (SSID), MAC Address, PHY Type (802.11g or 802.11n), RSSI, Signal Quality, Frequency, Channel Number, Maximum Speed, Company Name, Router Name/Model and more.
++ Windows Product Key Update Tool 1.7 - This tool is from microsoft to change the key of illegal/pirated installed xp to legit xp keys from the sticker on the PC, even if it is oem and not retail/corporate.
+* 3DP Chip 12.09
+* All Users Temp Cleaner 1.2
+* AlternateStreamView 1.32
+* Astra 6.01
+* Autoruns 11.34
+* Avira AntiVir Personal (18-10-2012)
+* BellaVista 1.1.0.71
+* BIOS Master Password Generator (Sony)
+* BlueScreenView 1.46
+* BootICE 2012.09.20
+* BulletsPassView 1.25
+* CCleaner 3.23.1823
+* ClamWin Free Antivirus 0.97.6
+* CloneSpy 2.63
+* ComboFix (18-10-2012)
+* Complete Internet Repair 1.3.1.1315
+* CPU-Z 1.61
+* CurrPorts 2.02
+* Defraggler 2.11.560
+* Device Doctor 2.1
+* Don't Sleep 2.82
+* Drive SnapShot 1.40
+* DriveImage XML 2.42
+* FastCopy 2.11
+* FileTypesMan 1.62
+* GParted Partition Editor 0.14.0
+* GPU-Z 0.6.5
+* grub4dos 2012-10-02
+* HashMyFiles 1.90
+* HDAT2 4.9B1
+* Image For Dos 2.75
+* Image For Windows 2.75
+* ImgBurn 2.5.7.0
+* InfraRecorder 0.53
+* IrfanView 4.33
+* IsoBuster 3.0
+* isolinux 4.05
+* LicenseCrawler 1.11.239
+* Mail PassView 1.78
+* Malwarebytes Anti-Malware 1.65 (18-10-2012)
+* MemDisk 4.05
+* Notepad++ 6.2
+* NTFS Access 2.2
+* NTFSLinksView 1.07
+* Opera 12.02
+* Parted Magic 2012-10-10
+* Partition Saving 4.00
+* Partition Wizard Home Edition 7.6.1
+* PC Wizard 2012.2.11
+* PCI 32 Sniffer 1.4 (18-10-2012)
+* PCI and AGP info Tool (18-10-2012)
+* PhotoFiltre 6.5.3
+* PhotoRec 6.14b
+* PLoP Boot Manager 5.0.14
+* Process Explorer 15.23
+* Process Monitor 3.03
+* ProcessActivityView 1.12
+* ProduKey 1.54
+* PuTTY 0.62-t012
+* Recuva 1.43.623
+* RegFromApp 1.23
+* RegScanner 1.90
+* Remove Fake Antivirus 1.88
+* Revo Uninstaller 1.94
+* RKill (18-10-2012)
+* RunAsDate 1.11
+* SearchMyFiles 2.30
+* ServiWin 1.50
+* ShellExView 1.76
+* Silent Runners Revision 64
+* SIW 2011.10.29
+* SmartSniff 1.95
+* SniffPass 1.13
+* SoftPerfect Network Scanner 5.4.7
+* Speccy 1.18.379
+* Spybot - Search & Destroy 1.6.2 (18-10-2012)
+* SuperAntispyware is now downloadable only
+* System Analyser 5.3x
+* System Explorer 3.9.7
+* TDSSKiller 2.8.13
+* TeamViewer 7.0.14563 + 6.0.10462
+* TestDisk 6.14b
+* TightVNC 2.5.2
+* Total Commander 8.01
+* TrID File Identifier 2.10
+* TrueCrypt 7.1a
+* UnknownDevices 1.4.20 (18-10-2012)
+* Update Checker 1.039
+* USBDeview 2.16
+* WebBrowserPassView 1.30
+* WinNTSetup 2.3.1.0
+* WinSCP 4.3.9
+* WirelessKeyView 1.56
+* WirelessNetView 1.41
+* Xp-AntiSpy 3.98
+* Homepage: www.hiren.info/bootcd
+
+
+-------------------------------
+Hiren's BootCD 15.1
+Updated on 07-12-2011
+Homepage: www.hiren.info/bootcd
+-------------------------------
++ ClamWin Free Antivirus 0.97.3 (07-12-2011)
+* DrWeb Antivirus is now downloadable only
+* Added options to integrate updates (on USB/writable drives) for Malwarebytes, SuperAntispyware, Avira Antivirus, Spybot Search & Destroy, ClamWin Antivirus and DrWeb Antivirus
+* Fixed HBCDMenu.cmd for 64bit
+* Minixp - Fixed msi installer
+* Partition Wizard 7.0
+* Western Digital lifeguard for windows 1.24
+* TeamViewer 6.0.10462
+- Ammyy Admin
+* TDSSKiller 2.6.21.0
+* Grub4dos 2011-12-06
+* Remove Fake Antivirus 1.82
+* Avira AntiVir Personal (07-12-2011)
+* ComboFix (07-12-2011)
+* Malwarebytes Anti-Malware 1.51.1 (07-12-2011)
+* RKill (07-12-2011)
+* Spybot - Search & Destroy 1.6.2 (07-12-2011)
+* SuperAntispyware 5.0.1134 (07-12-2011)
+* Homepage: www.hiren.info/bootcd
+
+
+
+-------------------------------
+Hiren's BootCD 15.0
+Updated on 29-10-2011
+Homepage: www.hiren.info/bootcd
+-------------------------------
++ Archive format changed from .uha to .7z
++ FreeOTFE 5.21 - Free, open source, on-the-fly transparent disk encryption program.
++ HBCDMenu.cmd can now be launched from WinPE/Network folder, for Vista/7 use F8 before you start windows and then choose Repair Computer > Command prompt and type D:\HBCDMenu
++ Junction 1.04 - Create/View/Delete Windows junction/reparse points on an NTFS drive.
++ Minixp - Added/updated Storage/LAN/WLAN drivers, added Arabic keyboard, Fixed keyboard changer, Set %temp%/pagefile on any drive and other minor improvements. 
++ NTFSLinksView 1.05 - To view list of all symbolic links, junctions and their target paths.
++ ODIN 0.3.4 - Open Disk Imager in a Nutshell is similar to Drive Snapshot which supports backing up windows while you are using it.
++ PC Decrapifier 2.2.8 - Removes unwanted preinstalled/bundled software from Windows XP/Vista/7 that usually comes with HP/Dell/Acer etc machines.
++ Print Flush 1.3 - To clean the print spool it restarts the print spooler and deletes junk print files.
++ TrID File Identifier 2.10 - Alternative of UnChk and FileCHK to recover filetype from the file content.
+* 3DP Chip 11.10
+* 7-Zip 9.22
+* Autoruns 11.0
+* Avira AntiVir Personal (29-10-2011)
+* BellaVista 1.1.0.66
+* BlueScreenView 1.40
+* CCleaner 3.12.1572
+* CloneDisk 1.9.6
+* CloneSpy 2.62
+* ComboFix (29-10-2011)
+* Complete Internet Repair 1.2.8.1283
+* CurrPorts 1.96
+* Defraggler 2.07.346
+* Device Doctor 2.0
+* Don't Sleep 2.42
+* Dr.Web CureIt! Antivirus (29-10-2011)
+* DriveImage XML 2.30
+* GParted Partition Editor 0.9.1
+* GPU-Z 0.5.5
+* grub4dos 2011-10-22
+* HashMyFiles 1.72
+* HBCD Customizer 3.0
+* HBCD Program Launcher 3.2
+* Image For Dos 2.66
+* Image For Windows 2.66
+* ImgBurn 2.5.6.0
+* Malwarebytes Anti-Malware 1.51.1 (29-10-2011)
+* Network Password Recovery 1.32
+* Opera 11.01
+* Parted Magic 6.7
+* PCI 32 Sniffer 1.4 (12-09-2011)
+* PCI and AGP info Tool (12-09-2011)
+* PhotoRec 6.13b
+* Process Explorer 15.05
+* Recuva 1.41.537
+* Remove Fake Antivirus 1.80
+* RKill (29-10-2011)
+* SearchMyFiles 1.80
+* ShadowCopy 2.00
+* SIW 2011.09.16
+* SmartSniff 1.85
+* SoftPerfect Network Scanner 5.2.3
+* Speccy 1.13.276
+* Spybot - Search & Destroy 1.6.2 (29-10-2011)
+* SuperAntispyware 5.0.1134 (29-10-2011)
+* System Explorer 3.5.2
+* TeamViewer 6.0.11117
+* TestDisk 6.13b
+* TrueCrypt 7.1
+* UnknownDevices 1.4.20 (12-09-2011)
+* USBDeview 1.95
+* WebBrowserPassView 1.15
+* WinSCP 4.3.5
+* WirelessKeyView 1.36
+* WirelessNetView 1.38
+* Homepage: www.hiren.info/bootcd
