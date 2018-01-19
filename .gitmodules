@@ -1,0 +1,12 @@
+[submodule "CD/HBCD/Boot"]
+	path = CD/HBCD/Boot
+	url = https://github.com/HBCD/Boot.git
+[submodule "CD/HBCD/Dos"]
+	path = CD/HBCD/Dos
+	url = https://github.com/HBCD/Dos.git
+[submodule "CD/HBCD/Programs"]
+	path = CD/HBCD/Programs
+	url = https://github.com/HBCD/Programs.git
+[submodule "CD/HBCD/XP"]
+	path = CD/HBCD/XP
+	url = https://github.com/HBCD/XP.git
