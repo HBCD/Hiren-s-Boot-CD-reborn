@@ -8,10 +8,32 @@ It is a great resource for anyone with computer problems who is having trouble a
 With some simple knowledge about what is contained on the CD, you can use it to repair many problems computer like hard drive failure, virus infections, partitioning, password recovery and data recovery.
 
 We may call it as an emergency CD which every computer technician or home user must have.
+---
+## How to create iso
 
+```
+git clone --depth=1 --recursive https://github.com/HBCD/Hiren-s-Boot-CD-reborn.git
+```
 
-## Information
+### 1. Run Make ISO .. (grub4dos or isolinux)
+![No Redeeemed Items](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/blob/master/img/screenshot-1.png)
 
+### 2. Ready
+> MyHBCD.iso
+
+```
+Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
+```
+---
+
+## How to?
+* [How to create iso](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/How-to-create-iso)
+
+> collaborate with the project
+
+* [How to update software](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/Update-new-program)
+* [How to add new software](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/Add-software)
+ 
 For more information review on  [**wiki**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/wiki)
 
 Tools added in [**Tool structure**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/projects/1)
