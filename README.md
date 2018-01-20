@@ -11,8 +11,11 @@ We may call it as an emergency CD which every computer technician or home user m
 ---
 ## How to create iso
 
-```
+```bash
 git clone --depth=1 --recursive https://github.com/HBCD/Hiren-s-Boot-CD-reborn.git
+cd Hiren-s-Boot-CD-reborn
+git pull --recurse-submodules
+git submodule update --remote --recursive
 ```
 
 ### 1. Run Make ISO .. (grub4dos or isolinux)
