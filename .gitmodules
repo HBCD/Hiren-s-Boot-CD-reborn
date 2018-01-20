@@ -1,0 +1,3 @@
+[submodule "CD"]
+	path = CD
+	url = https://github.com/HBCD/CD.git
