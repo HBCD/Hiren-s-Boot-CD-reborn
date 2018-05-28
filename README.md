@@ -28,8 +28,8 @@ git submodule update --remote --recursive
 Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
 ```
 ---
-
-## How to?
+## More detailed information check the [WIKI](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki) 
+### How to?
 * [How to create iso](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/How-to-create-iso)
 
 > collaborate with the project
@@ -37,6 +37,4 @@ Customize iso with HDCDCustomizer.exe (CD\HBCD\Programs\)
 * [How to update software](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/Update-new-program)
 * [How to add new software](https://github.com/HBCD/Hiren-s-Boot-CD-reborn/wiki/Add-software)
  
-For more information review on  [**wiki**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/wiki)
-
 Tools added in [**Tool structure**](https://github.com/Wikel/Hiren-s-Boot-CD-reborn/projects/1)
