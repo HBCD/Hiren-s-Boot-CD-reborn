@@ -1,3 +1,7 @@
+The **official HBCD team** is launching **[Hiren’s BootCD PE](https://www.hirensbootcd.org/)** for modern equipment, maybe this **Hiren-s-Boot-CD-reborn project will no longer be maintained**.
+
+---
+
 # Hiren-s-Boot-CD-reborn
 Rebuilding Hiren's Boot CD Including updated programs, fixing bugs and improving. Also adding more tools
 
